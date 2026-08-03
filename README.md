@@ -8,5 +8,7 @@ $ nest g service [name]
 ```bash
 $ nest g s [name]
 ```
----
 ![](https://imgur.com/St2SIDb.png)
+
+---
+
