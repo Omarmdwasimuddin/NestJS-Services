@@ -34,3 +34,10 @@ export class ProductService {
 }
 ```
 ---
+
+
+#### create product controller
+```bash
+nest g controller product
+```
+---
