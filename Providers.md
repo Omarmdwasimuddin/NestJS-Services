@@ -183,15 +183,3 @@ src
 2. **Standalone applications** — `bootstrap()` function-এর ভেতরে provider ব্যবহার করতে (যেমন bootstrap করার সময়ই একটা config service লাগবে)
 
 ---
-
-## সংক্ষেপে — কবে কী ব্যবহার করবে
-
-| Concept | কখন ব্যবহার করবে |
-|---|---|
-| **Provider (`@Injectable`)** | Business logic / data handling class বানানোর সময় |
-| **Constructor-based Injection** | Dependency inject করার default এবং recommended উপায় |
-| **Property-based Injection** | Class অন্য class extend করলে এবং constructor দিয়ে পাস করা কঠিন হলে |
-| **`@Optional()`** | Dependency না থাকলেও চলবে এমন ক্ষেত্রে |
-| **Custom Provider (token দিয়ে)** | Class না হয়ে অন্য কিছু (value/factory) inject করতে চাইলে |
-| **Request-scoped Provider** | Per-request আলাদা state দরকার হলে |
-| **Manual Instantiation** | DI system-এর বাইরে গিয়ে dynamically provider লাগলে |
