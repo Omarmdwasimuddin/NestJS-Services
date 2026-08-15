@@ -40,4 +40,6 @@ export class ProductService {
 ```bash
 nest g controller product
 ```
+<img width="272" height="112" alt="image" src="https://github.com/user-attachments/assets/abee923c-98a7-40a4-a77e-a0021ea99eef" />
+
 ---
