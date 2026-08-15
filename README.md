@@ -66,5 +66,5 @@ export class ProductController {
 ```
 ---
 
-> Output
+> ### Output
 > <img width="362" height="212" alt="image" src="https://github.com/user-attachments/assets/f5ea9a77-4e25-4d02-97b0-85cbd4e19fef" />
