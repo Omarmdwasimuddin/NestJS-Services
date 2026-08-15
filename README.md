@@ -43,3 +43,28 @@ nest g controller product
 <img width="272" height="112" alt="image" src="https://github.com/user-attachments/assets/abee923c-98a7-40a4-a77e-a0021ea99eef" />
 
 ---
+
+
+#### product.controller.ts
+```bash
+import { Controller, Param, Get } from '@nestjs/common';
+import { ProductService } from './product.service';
+
+@Controller('product')
+export class ProductController {
+    constructor(private readonly productService: ProductService){}
+        @Get()
+        getProducts(){
+            return this.productService.getAllProducts();
+        }
+        @Get(':id')
+        getProduct(@Param('id') id:string){
+            return this.productService.getProductById(Number(id))
+        }
+    
+}
+```
+---
+
+> Output
+> <img width="362" height="212" alt="image" src="https://github.com/user-attachments/assets/f5ea9a77-4e25-4d02-97b0-85cbd4e19fef" />
